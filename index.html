@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-Time Cryptocurrency Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Real-Time Cryptocurrency Tracker</h1>
+  </header>
+  <main>
+    <!-- Cryptocurrency Listing Section -->
+    <section id="crypto-listing">
+      <h2>Cryptocurrency Listing</h2>
+      <!-- Interactive search input -->
+      <input type="text" id="search" placeholder="Search fo" />
+      <!-- Loader to display while fetching data -->
+      <div id="loader">Loading...</div>
+
+      <table id="crypto-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>24h Change</th>
+            <th>Market Cap</th>
+            <th>Compare</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be populated here dynamically -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison">
+      <h2>Comparison Section</h2>
+      <div id="comparison-container">
+        <!-- Selected cryptocurrencies for comparison will appear here -->
+      </div>
+      <button id="clear-comparison">Clear Comparison</button>
+    </section>
+
+    <!-- User Preferences Section -->
+    <section id="user-preferences">
+      <h2>User Preferences</h2>
+      <label>
+        Sort by: 
+        <select id="sort-options">
+          <option value="market_cap_desc">Market Cap (High to Low)</option>
+          <option value="market_cap_asc">Market Cap (Low to High)</option>
+          <option value="price_desc">Price (High to Low)</option>
+          <option value="price_asc">Price (Low to High)</option>
+          <option value="change_desc">24h Change (High to Low)</option>
+          <option value="change_asc">24h Change (Low to High)</option>
+        </select>
+      </label>
+      <button id="apply-preferences">Apply</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Real-Time Cryptocurrency Tracker</p>
+    
+    <p> Prepared by Nitin Ramavath </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
